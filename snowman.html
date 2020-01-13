@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snow Man</title>
+  </head>
+  <body>
+
+<canvas id="canvas" width="400" height="400"
+style="background: blue"
+style="border: 1px solid #d3d3d3"></canvas>
+
+
+<script>
+var x = 300;
+var y = 150;
+var c = document.getElementById("canvas");
+var ctx = c.getContext("2d");
+
+
+ctx.fillStyle = "#ffffff";
+ctx.ellipse(x, y -60, 30, 30, 2 * Math.PI, 0, 2 * Math.PI);
+ctx.ellipse(x, y, 40, 40, 2 * Math.PI, 0, 2 * Math.PI);
+ctx.ellipse(x, y +70, 50, 50, 2 * Math.PI, 0, 2 * Math.PI);
+ctx.fill();
+
+</script>
+
+
+  </body>
+</html>

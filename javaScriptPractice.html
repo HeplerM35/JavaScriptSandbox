@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h2>Peanut Butter Cranberries</h2>
+    <button onclick="myFunction1()">Hello</button>
+    <p id="demo1"></p>
+    <script>
+    function myFunction1() {
+      var txt;
+      var person = prompt("Please enter your name:", "Harry Potter");
+      if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+      } else {
+        txt = "Hello " + person + "! We need your help. Click on the Download button next.";
+      }
+      document.getElementById("demo1").innerHTML = txt;
+    }
+    </script>
+
+    <h2>Download</h2>
+    <button onclick="myFunction2()">Click</button>
+    <script>
+    function myFunction2() {
+      alert("Need Confirmation!");
+    }
+    </script>
+
+    <h2>Confirm Download</h2>
+    <button onclick="myFunction3()">Click Me!</button>
+    <p id="demo3"></p>
+    <script>
+    function myFunction3() {
+      var txt;
+      if (confirm("Press a button!")) {
+        txt = "Download Completed. Click next button for extras.";
+      } else {
+        txt = "You suck!";
+      }
+      document.getElementById("demo3").innerHTML = txt;
+    }
+    </script>
+
+    <h2>Email</h2>
+    <button onclick="myFunction4()">Try it</button>
+    <p id="demo4"></p>
+    <script>
+    function myFunction4() {
+      var txt;
+      var person = prompt("Please enter your email:", "HarryPotter123@gmail.com");
+      if (person == null || person == "") {
+        txt = "Aw come on, don't you want extra deals?";
+      } else {
+        txt = "Thank you, " + person + "! We also would like your number in the next button.";
+      }
+      document.getElementById("demo4").innerHTML = txt;
+    }
+    </script>
+
+    <h2>Phone Number</h2>
+    <button onclick="myFunction5()">Try it</button>
+    <p id="demo5"></p>
+    <script>
+    function myFunction5() {
+      var txt;
+      var person = prompt("Please enter your phone number:", "(555)555-555");
+      if (person == null || person == "") {
+        txt = "We just need this last bit of information.";
+      } else {
+        txt = "Thank you," + person + "! We will send you extra deals!";
+      }
+      document.getElementById("demo5").innerHTML = txt;
+    }
+    </script>
+
+  </body>
+</html>
